@@ -205,17 +205,18 @@ function updateCartTotal() {
 }
 
 
-
+// Clear contents of comment box on form
 function clearContents(element) {
     element.value = '';
 }
 
+// Thank you message on form
 function FormJS() {
     let jFirst = document.getElementById("fname").value;
     alert("Thank you for getting in touch with us " + jFirst);
 }
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
 function myFunction() {
     let x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -224,3 +225,4 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+*/
