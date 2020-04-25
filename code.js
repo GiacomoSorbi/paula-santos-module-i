@@ -181,7 +181,7 @@ function updateCartTotal() {
         const priceElement = cartRow.getElementsByClassName('cart-price')[0]
         const quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
 
-        // We need the raw price without any weird characters
+        // We need to calculate the raw price without the pound character
 
         const price = parseFloat(priceElement.innerText.replace('£', ''))
 
@@ -192,7 +192,7 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
 
-    // Finally  we convert it into a string again 
+    // Finally we convert it into a string again 
     document.getElementsByClassName('cart-total-price')[0].innerText = '£' + total
 }
 
