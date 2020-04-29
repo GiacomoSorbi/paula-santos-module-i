@@ -3,10 +3,6 @@ body {
   line-height: 1.5;
 }
 
-#wrapper {
-  display: none;
-}
-
 nav {
   background: #323232;
   display: flex;
@@ -630,12 +626,29 @@ footer ul li {
 
 
 
-@media screen and (max-width: 390px) {
+
+/* Galaxy S7 portrait and landscape*/
+/*@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait)*/
   
-#wrapper {
+ @media screen and (min-width: 800px){
+  #wrapper {
+    display: none;
+  }
+}
+  
+@media screen and (max-width: 800px){
+    nav {
+      display: none;
+    }
+
+   #wrapper {
     background: #323232;
     text-align: center;
-  }
+    }
 
   .open {
     background-color: #323232;
@@ -687,9 +700,7 @@ footer ul li {
     text-decoration: underline;
   }
   
-  nav {
-    display: none;
-  }
+ 
 
   /*nav ul {
     display: flex;
@@ -702,7 +713,11 @@ footer ul li {
 }
 
 
-@media screen and (max-width: 390px) {
+
+
+
+
+@media screen and (min-width: 360px) {
   h1 {
     font-size: 1.5rem; 
   }
@@ -712,13 +727,13 @@ footer ul li {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 360px) {
   .shop-items {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 360px) {
   .cart-price {
     font-size: 1rem;
   }
