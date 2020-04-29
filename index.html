@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Module 1 Project">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
     <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - Home</title>
@@ -18,9 +18,20 @@
 
 <body>
     <header>
+        <div id="wrapper">
+            <span id="open" class="open" onclick="openNav()">&#9776</span>
+            <div class="burger" id="burger">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a class="current" href="./index.html">Home</a>
+                <a href="./about.html">About us</a>
+                <a href="./publications.html">Publications</a>
+                <a href="./events.html">Events</a>
+                <a href="./contact.html">Contact us</a>
+            </div>
+        </div>
         <nav>
             <ul>
-                <li><a class="current" href="./index.html">Home</a></li>
+                <li><a id="current" href="./index.html">Home</a></li>
                 <li><a href="./about.html">About us</a></li>
                 <li><a href="./publications.html">Publications</a></li>
                 <li><a href="./events.html">Events</a></li>

@@ -205,6 +205,17 @@ function clearContents(element) {
 
 // Thank you message on Contact form
 function FormJS() {
-    let jFirst = document.getElementById("fname").value;
+    let jFirst = document.getElementById('fname').value;
     alert("Thank you for getting in touch with us " + jFirst);
+}
+
+// Mobile menu
+function openNav() {
+    document.getElementById("open").style.display = "none";
+    document.getElementById("burger").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("burger").style.width = "0";
+    document.getElementById("open").style.display = "flex";
 }

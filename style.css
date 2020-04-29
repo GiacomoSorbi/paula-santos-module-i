@@ -3,6 +3,9 @@ body {
   line-height: 1.5;
 }
 
+.wrapper {
+  display: none;
+}
 
 nav {
   background: #323232;
@@ -29,7 +32,7 @@ nav ul li a {
   padding: 0.5em 0.75em;
 }
 
-nav .current {
+nav #current {
   color: #fff;
   border: solid #fff;
   border-radius: 0.3125em;
@@ -628,14 +631,73 @@ footer ul li {
 
 
 @media screen and (max-width: 390px) {
-   
-  nav ul {
+  
+#wrapper {
+    background: #323232;
+    text-align: center;
+  }
+
+  .open {
+    background-color: #323232;
+    color: #fff;
+    font-size: 1.375em;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .burger {
+    width: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    position: absolute;
+    background-color: #323232;
+    transition: 0.3s;
     display: flex;
     flex-direction: column;
     line-height: 2;
     justify-content: center;
     align-items: center;
   }
+
+  .burger a {
+    color: #f6a21d;
+    font-size: 1.375em;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .burger .current {
+    color: #fff;
+    border: solid #fff;
+    border-radius: 0.3125em;
+    padding: 0.2em;
+  }
+
+  .close {
+    float: none;
+  }
+
+  .burger a:not(:first-child):hover{
+    background-color: #323232;
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  /*nav ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+  }*/
 
 }
 

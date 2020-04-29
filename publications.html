@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Module 1 Project">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
     <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - Publications</title>
@@ -17,11 +17,22 @@
 
 <body>
     <header>
+        <div id="wrapper">
+            <span id="open" class="open" onclick="openNav()">&#9776</span>
+            <div class="burger" id="burger">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About us</a>
+                <a class="current" href="./publications.html">Publications</a>
+                <a href="./events.html">Events</a>
+                <a href="./contact.html">Contact us</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About us</a></li>
-                <li><a class="current" href="./publications.html">Publications</a></li>
+                <li><a id="current" href="./publications.html">Publications</a></li>
                 <li><a href="./events.html">Events</a></li>
                 <li><a href="./contact.html">Contact us</a></li>
             </ul>
@@ -64,8 +75,7 @@
 
                 <div class="shop-item">
 
-                    <span class="shop-item-title">Martin Heidegger, Einführung in Die Metaphysik (translated by I.
-                        Nabil)</span>
+                    <span class="shop-item-title">Martin Heidegger, Einführung in Die Metaphysik</span>
 
                     <img class="shop-item-image" src="images/heidegger-web.jpg"
                         alt="Front cover of Imad Nabil's translation of Heidegger's book."
@@ -83,8 +93,7 @@
 
                 <div class="shop-item">
 
-                    <span class="shop-item-title">Jacques Derrida, Of Spirit – Heidegger and the Question (translated by
-                        I. Nabil)</span>
+                    <span class="shop-item-title">Jacques Derrida, Of Spirit – Heidegger and the Question</span>
 
                     <img class="shop-item-image" src="images/derrida-web.jpg"
                         alt="Front cover of Imad Nabil's translation of Derrida's book."
