@@ -127,7 +127,7 @@ function addItemToCart(title, price, imageSrc) {
     // We use the helper function we just defined to avoid duplicates 
 
     if (itemAlreadyExists(title)) {
-        alert('This item is already added to the cart')
+        alert('This item is already added to the basket')
         return
     }
 
