@@ -6,7 +6,6 @@ body {
 
 nav {
   background: #323232;
-  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,10 +22,18 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+  text-align: center;
   font-weight: bold;
   font-size: 1.125rem;
   color: #f6a21d;
+  padding: 0.5em 0.75em;
 }
+
+nav .current {
+  color: #fff;
+  border: solid #fff;
+  border-radius: 0.3125em;
+} 
 
 nav ul li a:hover {
   color: #fff;
@@ -39,7 +46,6 @@ nav ul li a:active {
   text-decoration: underline;
 }
 
-
 #hero{
   background: #323232;
   background: -webkit-linear-gradient(rgba(50, 50, 50, 1), rgba(50, 50, 50, 0.6)), url("images/thames.jpg");
@@ -48,7 +54,7 @@ nav ul li a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 18.75em;
 }
 
 .banner-sub-pages{
@@ -59,7 +65,7 @@ nav ul li a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 9.375em;
 }
 
 h1 {
@@ -70,7 +76,6 @@ h1 {
 
 h2 {
   color: #800000;
-  padding: 10px;
   line-height: normal;
   font-size: 1.5rem;
   text-align: center;
@@ -93,9 +98,8 @@ h2 a:active {
 }
 
 
-h3, h4 {
+h3 {
   color: #800000;
-  padding: 10px;
   line-height: normal;
   text-align: center;
 }
@@ -114,7 +118,7 @@ p {
   font-size: 1.13rem;
   text-align: center;
   line-height: normal;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 p a {
@@ -122,7 +126,9 @@ p a {
 }
 
 p a:hover {
-  color: #800000;
+  color: #fff;
+  background-color: #800000;
+  text-decoration: underline;
 }
 
 p a:active {
@@ -133,11 +139,11 @@ p a:active {
 
 
 button {
-  border: 1px solid #800000; 
+  border: solid #800000; 
   background: #800000;
   font-weight: bold;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
@@ -151,6 +157,7 @@ button a {
 }
 
 button a:hover {
+  text-decoration: underline;
   color: #fff; 
 }
 
@@ -167,17 +174,17 @@ form {
 
 label {
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
 }
 
 input {
-  border: 2px solid #800000;
+  border: 0.125em solid #800000;
   background: #fff;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
@@ -185,24 +192,28 @@ input {
 }
 
 textarea {
-  border: 2px solid #800000;
+  border: 0.125em solid #800000;
   background: #fff;
   font-family: Tahoma, Geneva, sans-serif; 
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
   margin: 0.5% 0.5% 0.5% 1%;
 }
 
+fieldset {
+  border: none;
+}
+
 #submit {
-  border: 1px solid #800000;
+  border: solid #800000;
   color: #fff;
   background: #800000;
   font-weight: bold;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
@@ -216,6 +227,7 @@ textarea {
 
 #submit a:hover {
   color: #fff; 
+  text-decoration: underline;
 }
 
 #submit:active {
@@ -244,7 +256,7 @@ margin: .5em 15% 2em 15%;
 
 color: white;
 
-border: 2px solid #800000; 
+border: 0.125em solid #800000; 
 
 background-color: rgba(255, 255, 255, .1);
 
@@ -280,9 +292,9 @@ font-size: 4em;
 
 border-radius: 50%;
 
-width: 100px;
+width: 6.25em;
 
-height: 100px;
+height: 6.25em;
 
 padding: 0;
 
@@ -322,7 +334,7 @@ background-color: #800000;
 
 .shop-item {
 
-margin: 30px;
+margin: 1.875em;
 
 }
 
@@ -342,7 +354,7 @@ font-size: 1.13rem;
 
 color: #333;
 
-margin-bottom: 15px;
+margin-bottom: 0.9375em;
 
 }
 
@@ -350,7 +362,7 @@ margin-bottom: 15px;
 
 .shop-item-image {
 
-height: 150px;
+height: 9.375em;
 display: flex;
 margin-left: auto;
 margin-right: auto;
@@ -364,7 +376,7 @@ display: flex;
 
 align-items: center;
 
-padding: 5px;
+padding: 0.3125em;
 
 }
 
@@ -409,13 +421,13 @@ display: flex;
 
 align-items: center;
 
-border-bottom: 1px solid black;
+border-bottom: solid black;
 
 margin-right: 1.5em;
 
-padding-bottom: 10px;
+padding-bottom: 0.625em;
 
-margin-top: 10px;
+margin-top: 0.625em;
 
 }
 
@@ -509,13 +521,13 @@ background-color: #800000;
 
 .cart-quantity-input {
 
-height: 34px;
+height: 2.125em;
 
-width: 50px;
+width: 3.125em;
 
-border-radius: 5px;
+border-radius: 0.3125em;
 
-border: 1px solid #800000; 
+border: solid #800000; 
 
 background-color: #eee;
 
@@ -527,7 +539,7 @@ text-align: center;
 
 font-size: 1rem;
 
-margin-right: 25px;
+margin-right: 1.5625em;
 
 }
 
@@ -535,7 +547,7 @@ margin-right: 25px;
 
 .cart-row:last-child {
 
-border-bottom: 1px solid black;
+border-bottom: solid black;
 
 }
 
@@ -553,9 +565,9 @@ border: none;
 
 text-align: end;
 
-margin-top: 10px;
+margin-top: 0.625em;
 
-margin-right: 10px;
+margin-right: 0.625em;
 
 }
 
@@ -569,7 +581,7 @@ font-size: 1.13rem;
 
 color: black;
 
-margin-right: 20px;
+margin-right: 1.25em;
 
 }
 
@@ -589,7 +601,7 @@ font-size: 1.13rem;
 
 display: block;
 
-margin: 40px auto 80px auto;
+margin: 2.5em auto 5em auto;
 
 font-size: 1.13rem;
 
@@ -598,7 +610,7 @@ font-size: 1.13rem;
 
 footer {
   background: #323232;
-  padding: 10px;
+  padding: 0.625em;
   display: flex;
   justify-content: center;
   align-items: center;

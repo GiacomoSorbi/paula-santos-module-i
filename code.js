@@ -198,7 +198,7 @@ function updateCartTotal() {
 
 
 
-// Clear contents of comment box on Contact form
+// Clear textarea of comment box on click
 function clearContents(element) {
     element.value = '';
 }

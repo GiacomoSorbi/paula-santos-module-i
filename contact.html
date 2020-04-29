@@ -23,7 +23,7 @@
                 <li><a href="./about.html">About us</a></li>
                 <li><a href="./publications.html">Publications</a></li>
                 <li><a href="./events.html">Events</a></li>
-                <li><a href="./contact.html">Contact us</a></li>
+                <li><a class="current" href="./contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -49,20 +49,22 @@
             </div>
             <h3>Tell us more about you:</h3>
             <div>
-                <input id="student" type="radio" name="answer" value="student">
-                <label for="student">I'm a student</label>
-                <br>
-                <input id="academic" type="radio" name="answer" value="academic">
-                <label for="academic">I'm an academic</label>
-                <br>
-                <input id="lecturer" type="radio" name="answer" value="lecturer">
-                <label for="lecturer">I'm a lecturer</label>
-                <br>
-                <input id="researcher" type="radio" name="answer" value="researcher">
-                <label for="researcher">I'm a researcher</label>
-                <br>
-                <input id="other" type="radio" name="answer" value="other">
-                <label for="other">Other</label>
+                <fieldset>
+                    <input id="student" type="radio" name="answer" value="student">
+                    <label for="student">I'm a student</label>
+                    <br>
+                    <input id="academic" type="radio" name="answer" value="academic">
+                    <label for="academic">I'm an academic</label>
+                    <br>
+                    <input id="lecturer" type="radio" name="answer" value="lecturer">
+                    <label for="lecturer">I'm a lecturer</label>
+                    <br>
+                    <input id="researcher" type="radio" name="answer" value="researcher">
+                    <label for="researcher">I'm a researcher</label>
+                    <br>
+                    <input id="other" type="radio" name="answer" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
                 <br>
                 <label for="if-other">If 'Other', please specify: </label>
                 <input type="text" name="if-other" id="if-other">
