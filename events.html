@@ -4,54 +4,83 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Module 1 Project">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
     <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - Events</title>
-    <link href="./style.css" rel="stylesheet">
-</head>
+
+    <head profile="https://giacomoSorbi.github.io/paula-santos-module-i">
+        <link rel="icon" type="image/png" href="images/icon.png" />
+        <link href="./style.css" rel="stylesheet">
+        <script src="code.js" async></script>
+    </head>
 
 <body>
     <header>
-        <nav class="menu_hamburger">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About us</a></li>
-                <li><a href="./events.html">Events</a></li>
-                <li><a href="./publications.html">Publications store</a></li>
-                <li><a href="./contact.html">Contact us</a></li>
-            </ul>
-        </nav>
+        <<<<<<< HEAD <nav class="menu_hamburger">
+            =======
+            <div id="wrapper">
+                <span id="open" class="open" onclick="openNav()">&#9776;</span>
+                <div class="burger" id="burger">
+                    <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About us</a>
+                    <a href="./publications.html">Publications</a>
+                    <a class="current" href="./events.html">Events</a>
+                    <a href="./contact.html">Contact us</a>
+                </div>
+            </div>
+            <nav>
+                >>>>>>> gh-pages
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./publications.html">Publications</a></li>
+                    <li><a id="current" href="./events.html">Events</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
-        <section></section>
-        <h1>Events</h1>
-        <p>The events other research insitutions are organising.</p>
-        <h2><a href="https://www.kingston.ac.uk/events/item/3574/29-feb-2020-thinking-art/">Thinking Art</a></h2>
-        <p><b>When: 29 February 2020</b><br>
-            <b>Organiser: CRMEP</b></p>
+        <section class="banner-sub-pages">
+            <h1>Events</h1>
+        </section>
+        <section>
+            <p>The events that other research institutions are organising.</p>
+            <h2><a href="https://www.kingston.ac.uk/events/item/3475/20-nov-2020-critique-of-strategic-reason/">Critique
+                    of Strategic Reason</a></h2>
+            <p><b>When: 20 November 2020</b><br>
+                <b>Organiser: CRMEP/University of Paris-8</b></p>
 
-        <p>A one-day international <a
-                href="https://www.kingston.ac.uk/events/item/3574/29-feb-2020-thinking-art/">conference</a> organised by
-            the Centre for Research in Modern European Philosophy
-            (CRMEP), Kingston University, in collaboration with the Institute of Contemporary Arts (ICA),
-            London.</p>
+            <p>A Centre for Research in Modern European Philosophy Workshop in collaboration with the Department of
+                Philosophy, University of Paris-8.</p>
 
+            <p><button><a
+                        href="https://www.kingston.ac.uk/events/item/3475/20-nov-2020-critique-of-strategic-reason/">Book
+                        event</a></button></p>
 
-        <h2><a href="https://warwick.ac.uk/fac/soc/philosophy/news/conference/poetryandphil">Poetry and Philosophy
-                Conference</a></h2>
-        <p><b>When: 16-17 March 2020</b><br>
-            <b>Organiser: University of Warwick</b></p>
-        <p>The University of Warwick will host this BSA Synergy <a
-                href="https://warwick.ac.uk/fac/soc/philosophy/news/conference/poetryandphil">conference</a> focusing on
-            questions of shared interest for
-            poetry and philosophy. Poets, philosophers, philosopher-poets, poet-philosophers, and poetry scholars will
-            bring their expertise and experience to the conversation.</p>
+            <h2><a
+                    href="https://www.kingston.ac.uk/events/item/3558/10-jun-2021-boris-groys-antiphilosophy-and-politics-of-recognition/">Boris
+                    Groys: Anti-philosophy and Politics of Recognition</a></h2>
+            <p><b>When: 10 June 2021</b><br>
+                <b>Organiser: CRMEP/University of Westminster</b></p>
+            <p>Public lecture on Boris Groys (Global Distinguished Professor of Russian and Slavic Studies, New York
+                University). This event is a collaboration with the Institute of Modern and Contemporary Culture,
+                University of Westminster.</p>
 
-
+            <p><button><a
+                        href="https://www.kingston.ac.uk/events/item/3558/10-jun-2021-boris-groys-antiphilosophy-and-politics-of-recognition/">Book
+                        event</a></button></p>
         </section>
     </main>
-
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/meprti"> <img class="social" img src="images/twitter.png"
+                        alt="Twitter icon" title="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/meprti/"><img class="social" img src="images/facebook.png"
+                        alt="Facebook icon" title="Facebook"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

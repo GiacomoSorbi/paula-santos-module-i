@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head profile="https://giacomoSorbi.github.io/paula-santos-module-i">
     <meta charset="utf-8">
     <meta name="description" content="Module 1 Project">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
     <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - Home</title>
+
+    <link rel="icon" type="image/png" href="images/icon.png" />
     <link href="./style.css" rel="stylesheet">
     <script src="code.js" async></script>
 </head>
 
 <body>
     <header>
-        <nav class="menu-humburger">
+        <div id="wrapper">
+            <span id="open" class="open" onclick="openNav()">&#9776;</span>
+            <div class="burger" id="burger">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a class="current" href="./index.html">Home</a>
+                <a href="./about.html">About us</a>
+                <a href="./publications.html">Publications</a>
+                <a href="./events.html">Events</a>
+                <a href="./contact.html">Contact us</a>
+            </div>
+        </div>
+        <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a id="current" href="./index.html">Home</a></li>
                 <li><a href="./about.html">About us</a></li>
+                <li><a href="./publications.html">Publications</a></li>
                 <li><a href="./events.html">Events</a></li>
-                <li><a href="./publications.html">Publications store</a></li>
                 <li><a href="./contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="banner-title">
+        <section id="hero">
             <h1>Modern European Philosophy <br>Research and Translation Institute (MEPRTI)</h1>
         </section>
-        <section class="about">
-            <h2 id="about"><a href="./about.html">About us</a></h2>
-            <p>We are an independent, impartial <a href="./about.html">organisation</a> with no religious or political
-                affiliation.</p>
+
+        <section>
+            <h2><a href="./about.html">About us</a></h2>
+            <p>We are an independent, impartial <a href="./about.html">organisation</a> with no religious or
+                political affiliation.</p>
+        </section>
+        <section>
+            <h2><a href="./publications.html">Publications</a></h2>
+            <p>In this section you can <a href="./publications.html">buy our books.</a></p>
         </section>
 
-        <section class="events">
-            <h2 id="about"><a href="./events.html">Events</a></h2>
-            <p>Find out what <a href="./events.html">events</a> other research insitutions are organising.</p>
+        <section>
+            <h2><a href="./events.html">Events</a></h2>
+            <p>Find out what <a href="./events.html">events</a> other research institutions are organising.
+            </p>
         </section>
-        <section class="publications">
-            <h2 id="publications"><a href="./publications.html">Publications store</a></h2>
-            <p>In this section you can buy our books</p>
-
-            <button id="button"><a href="./publications.html">Publications store</a></button>
-
-        </section>
-        <section class="contact">
-            <h2 id="contact"><a href="./contact.html">Contact us</a></h2>
+        <section>
+            <h2><a href="./contact.html">Contact us</a></h2>
             <p><a href="./contact.html">Get in touch</a> with us.</p>
-
         </section>
     </main>
 
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/meprti"> <img class="social" img src="images/twitter.png"
+                        alt="Twitter icon" title="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/meprti/"><img class="social" img src="images/facebook.png"
+                        alt="Facebook icon" title="Facebook"></a></li>
+        </ul>
+    </footer>
 
 </body>
 

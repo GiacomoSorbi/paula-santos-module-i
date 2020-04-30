@@ -4,32 +4,47 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Module 1 Project">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
     <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - Contact us</title>
-    <link href="./style.css" rel="stylesheet">
-    <script src="code.js" async></script>
-</head>
+
+    <head profile="https://giacomoSorbi.github.io/paula-santos-module-i">
+        <link rel="icon" type="image/png" href="images/icon.png" />
+        <link href="./style.css" rel="stylesheet">
+        <script src="code.js" async></script>
+    </head>
 
 <body>
     <header>
+        <div id="wrapper">
+            <span id="open" class="open" onclick="openNav()">&#9776;</span>
+            <div class="burger" id="burger">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About us</a>
+                <a href="./publications.html">Publications</a>
+                <a href="./events.html">Events</a>
+                <a class="current" href="./contact.html">Contact us</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About us</a></li>
+                <li><a href="./publications.html">Publications</a></li>
                 <li><a href="./events.html">Events</a></li>
-                <li><a href="./publications.html">Publications store</a></li>
-                <li><a href="./contact.html">Contact us</a></li>
+                <li><a id="current" href="./contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section></section>
-        <h1>Contact us</h1>
-
+        <section class="banner-sub-pages">
+            <h1>Contact us</h1>
+        </section>
+        </section>
         <h2 id="contact">Get in touch with us</h2>
-
+        </section>
         <form NAME="contact" onSubmit="JavaScript:FormJS()">
             <div>
                 <label for="email">*Your email: </label>
@@ -45,20 +60,22 @@
             </div>
             <h3>Tell us more about you:</h3>
             <div>
-                <input id="student" type="radio" name="answer" value="student">
-                <label for="student">I'm a student</label>
-                <br>
-                <input id="academic" type="radio" name="answer" value="academic">
-                <label for="academic">I'm an academic</label>
-                <br>
-                <input id="lecturer" type="radio" name="answer" value="lecturer">
-                <label for="lecturer">I'm a lecturer</label>
-                <br>
-                <input id="researcher" type="radio" name="answer" value="researcher">
-                <label for="researcher">I'm a researcher</label>
-                <br>
-                <input id="other" type="radio" name="answer" value="other">
-                <label for="other">Other</label>
+                <fieldset>
+                    <input id="student" type="radio" name="answer" value="student">
+                    <label for="student">I'm a student</label>
+                    <br>
+                    <input id="academic" type="radio" name="answer" value="academic">
+                    <label for="academic">I'm an academic</label>
+                    <br>
+                    <input id="lecturer" type="radio" name="answer" value="lecturer">
+                    <label for="lecturer">I'm a lecturer</label>
+                    <br>
+                    <input id="researcher" type="radio" name="answer" value="researcher">
+                    <label for="researcher">I'm a researcher</label>
+                    <br>
+                    <input id="other" type="radio" name="answer" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
                 <br>
                 <label for="if-other">If 'Other', please specify: </label>
                 <input type="text" name="if-other" id="if-other">
@@ -76,9 +93,14 @@
 
         </section>
     </main>
-    <script>
-        console.log('it works!')
-    </script>
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/meprti"> <img class="social" img src="images/twitter.png"
+                        alt="Twitter icon" title="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/meprti/"><img class="social" img src="images/facebook.png"
+                        alt="Facebook icon" title="Facebook"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

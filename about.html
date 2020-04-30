@@ -4,43 +4,70 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Module 1 Project">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
     <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - About us</title>
-    <link href="./style.css" rel="stylesheet">
-</head>
+
+    <head profile="https://giacomoSorbi.github.io/paula-santos-module-i">
+        <link rel="icon" type="image/png" href="images/icon.png" />
+        <link href="./style.css" rel="stylesheet">
+        <script src="code.js" async></script>
+    </head>
 
 <body>
     <header>
+        <div id="wrapper">
+            <span id="open" class="open" onclick="openNav()">&#9776;</span>
+            <div class="burger" id="burger">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Home</a>
+                <a class="current" href="./about.html">About us</a>
+                <a href="./publications.html">Publications</a>
+                <a href="./events.html">Events</a>
+                <a href="./contact.html">Contact us</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About us</a></li>
+                <li><a id="current" href="./about.html">About us</a></li>
+                <li><a href="./publications.html">Publications</a></li>
                 <li><a href="./events.html">Events</a></li>
-                <li><a href="./publications.html">Publications store</a></li>
                 <li><a href="./contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section></section>
-        <h1>About us</h1>
-        <h2>Who we are</h2>
-        <p>The Modern European Philosophy Research and Translation Institute (MEPRTI) is an independent, impartial
-            organisation with no religious or political affiliation. </p>
-        <h3>Our goals and objectives</h3>
-        <p>We aim to provide research and translation of modern and contemporary European philosophy works into English
-            and Arabic and to offer impartial, objective, and independent introductions and explanatory observations to
-            major thinkers who have had a critical intellectual influence since the XVI century.</p>
+        <section class="banner-sub-pages">
+            <h1>About us</h1>
+        </section>
+        <section>
+            <h2>Who we are</h2>
+            <p>The Modern European Philosophy Research and Translation Institute (MEPRTI) is an independent, impartial
+                organisation with no religious or political affiliation. </p>
+            <h3>Our goals and objectives</h3>
+            <p>We aim to provide research and translation of modern and contemporary European philosophy works into
+                English
+                and Arabic and to offer impartial, objective, and independent introductions and explanatory observations
+                to
+                major thinkers who have had a critical intellectual influence since the XVI century.</p>
 
-        <h3>How we are funded</h3>
-        <p>We rely on funding from donors. Please <a href="./contact.html">contact us</a> if you wish to support us.</p>
+            <h3>How we are funded</h3>
+            <p>We rely on funding from donors. Please <a href="./contact.html">contact us</a> if you wish to support us.
+            </p>
 
 
         </section>
     </main>
-
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/meprti"> <img class="social" img src="images/twitter.png"
+                        alt="Twitter icon" title="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/meprti/"><img class="social" img src="images/facebook.png"
+                        alt="Facebook icon" title="Facebook"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

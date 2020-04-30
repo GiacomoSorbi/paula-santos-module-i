@@ -3,10 +3,11 @@ body {
   line-height: 1.5;
 }
 
-
 nav {
   background: #323232;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -15,178 +16,169 @@ nav ul {
 }
 
 nav ul li {
-  padding-right: 1em;
+  padding-right: 2em;
 }
 
 nav ul li a {
   text-decoration: none;
+  text-align: center;
   font-weight: bold;
   font-size: 1.125rem;
   color: #f6a21d;
+  padding: 0.5em 0.75em;
 }
+
+nav #current {
+  color: #fff;
+  border: solid #fff;
+  border-radius: 0.3125em;
+} 
 
 nav ul li a:hover {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
 nav ul li a:active {
-  color: #000;
-  background-color: #d4d0ab;
-  text-decoration: none;
-  padding: 10px;
+  color: #fff;
+  text-decoration: underline;
 }
 
-/* Add a black background color to the top navigation 
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add an active class to highlight the current page 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens 
-.topnav .icon {
-  display: none;
-}
-*/
-
-
-.banner-title{
-  /*background: #141E30;*/
-  background-image: url("thames.jpg");
+#hero{
+  background: #323232;
+  background: -webkit-linear-gradient(rgba(50, 50, 50, 1), rgba(50, 50, 50, 0.6)), url("images/thames.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18.75em;
+}
+
+.banner-sub-pages{
+  background: #323232;
+  background: -webkit-linear-gradient(rgba(50, 50, 50, 1), rgba(50, 50, 50, 0.6)), url("images/thames-titles.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9.375em;
 }
 
 h1 {
-  color: #000;
+  color: #fff;
   font-size: 1.75rem;
-  padding: 10px;
-  background: #d4d0ab;
-  opacity: 0.80;
+  text-align: center;
 }
 
 h2 {
-  color: #d43900;
-  padding: 10px;
+  color: #800000;
   line-height: normal;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 h2 a {
-  color: #d43900;
+  color: #800000;
   text-decoration: none;
 }
 
 h2 a:hover {
-  color: #d43900;
+  color: #800000;
   text-decoration: underline;
 }
 
-h3, h4 {
-  color: #d43900;
-  padding: 10px;
+h2 a:active {
+  color: #fff;
+  background-color: #800000;
+  text-decoration: underline;
+}
+
+
+h3 {
+  color: #800000;
   line-height: normal;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.3rem;
 }
 
-h4 {
-  font-size: 1.13rem;
-}
-
-
 p {
   color: #000000;
   font-size: 1.13rem;
+  text-align: center;
   line-height: normal;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 p a {
-  color: #d43900;
+  color: #800000;
 }
 
 p a:hover {
-  color: #d43900;
+  color: #fff;
+  background-color: #800000;
+  text-decoration: underline;
 }
 
 p a:active {
   color: #fff;
-  background-color: #d43900;
+  background-color: #800000;
   text-decoration: underline;
 }
 
-#button {
-  border: 1px solid #d43900; 
-  background: #d43900;
+
+button {
+  border: solid #800000; 
+  background: #800000;
   font-weight: bold;
-  text-align: left;
-  border-radius: 10px;
+  text-align: center;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
   margin: 1.5% 1.5% 1.5% 1%;
+  cursor: pointer;
 }
 
-#button a {
+button a {
   text-decoration: none;
   color: #fff;
 }
 
-#button a:hover {
-  color: #000; 
+button a:hover {
   text-decoration: underline;
+  color: #fff; 
 }
 
-#button:active {
-  color: #000; 
+button:active {
+  text-decoration: underline;
+  background: #000; 
 }
 
 
 form {
   font-family: Tahoma, Geneva, sans-serif; 
+  text-align: center;
   }
 
 label {
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
 }
 
 input {
-  border: 2px solid #d4d0ab;
+  border: 0.125em solid #800000;
   background: #fff;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
@@ -194,27 +186,33 @@ input {
 }
 
 textarea {
-  border: 2px solid #d4d0ab;
+  border: 0.125em solid #800000;
   background: #fff;
+  font-family: Tahoma, Geneva, sans-serif; 
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
   margin: 0.5% 0.5% 0.5% 1%;
 }
 
+fieldset {
+  border: none;
+}
+
 #submit {
-  border: 1px solid #141E30;
-  color: #f6a21d;
-  background: #323232;
+  border: solid #800000;
+  color: #fff;
+  background: #800000;
   font-weight: bold;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1%;
   font-size: 1.13rem;
   line-height: 1.8;
   margin: 1.5% 1.5% 1.5% 1%;
+  cursor: pointer;
 }
 
 #submit a {
@@ -223,8 +221,13 @@ textarea {
 
 #submit a:hover {
   color: #fff; 
+  text-decoration: underline;
 }
 
+#submit:active {
+  text-decoration: underline;
+  background: #000; 
+}
 
 
 .btn {
@@ -247,7 +250,7 @@ margin: .5em 15% 2em 15%;
 
 color: white;
 
-border: 2px solid #d43900; 
+border: 0.125em solid #800000; 
 
 background-color: rgba(255, 255, 255, .1);
 
@@ -279,15 +282,13 @@ display: block;
 
 margin: 0 auto;
 
-color: #d43900;
-
 font-size: 4em;
 
 border-radius: 50%;
 
-width: 100px;
+width: 6.25em;
 
-height: 100px;
+height: 6.25em;
 
 padding: 0;
 
@@ -301,7 +302,7 @@ text-align: center;
 
 color: white;
 
-background-color: #d43900; 
+background-color: #800000; 
 
 border: none;
 
@@ -315,15 +316,19 @@ font-weight: bold;
 
 .btn-primary:hover {
 
-background-color: #d43900; 
+background-color: #800000; 
 
 }
 
+.btn-primary:active {
+  text-decoration: underline;
+  background: #000; 
+}
 
 
 .shop-item {
 
-margin: 30px;
+margin: 1.875em;
 
 }
 
@@ -343,7 +348,7 @@ font-size: 1.13rem;
 
 color: #333;
 
-margin-bottom: 15px;
+margin-bottom: 0.9375em;
 
 }
 
@@ -351,7 +356,7 @@ margin-bottom: 15px;
 
 .shop-item-image {
 
-height: 150px;
+height: 9.375em;
 display: flex;
 margin-left: auto;
 margin-right: auto;
@@ -365,7 +370,7 @@ display: flex;
 
 align-items: center;
 
-padding: 5px;
+padding: 0.3125em;
 
 }
 
@@ -410,13 +415,13 @@ display: flex;
 
 align-items: center;
 
-border-bottom: 1px solid black;
+border-bottom: solid black;
 
 margin-right: 1.5em;
 
-padding-bottom: 10px;
+padding-bottom: 0.625em;
 
-margin-top: 10px;
+margin-top: 0.625em;
 
 }
 
@@ -484,7 +489,7 @@ height: auto;
 
 color: white;
 
-background-color: #EB5757;
+background-color: #800000;
 
 border: none;
 
@@ -498,21 +503,25 @@ font-weight: bold;
 
 .btn-danger:hover {
 
-background-color: #CC4C4C;
+background-color: #800000;
 
 }
 
+.btn-danger:active {
+  text-decoration: underline;
+  background: #000; 
+}
 
 
 .cart-quantity-input {
 
-height: 34px;
+height: 2.125em;
 
-width: 50px;
+width: 3.125em;
 
-border-radius: 5px;
+border-radius: 0.3125em;
 
-border: 1px solid #d43900; 
+border: solid #800000; 
 
 background-color: #eee;
 
@@ -524,7 +533,7 @@ text-align: center;
 
 font-size: 1rem;
 
-margin-right: 25px;
+margin-right: 1.5625em;
 
 }
 
@@ -532,7 +541,7 @@ margin-right: 25px;
 
 .cart-row:last-child {
 
-border-bottom: 1px solid black;
+border-bottom: solid black;
 
 }
 
@@ -550,9 +559,9 @@ border: none;
 
 text-align: end;
 
-margin-top: 10px;
+margin-top: 0.625em;
 
-margin-right: 10px;
+margin-right: 0.625em;
 
 }
 
@@ -566,7 +575,7 @@ font-size: 1.13rem;
 
 color: black;
 
-margin-right: 20px;
+margin-right: 1.25em;
 
 }
 
@@ -586,48 +595,112 @@ font-size: 1.13rem;
 
 display: block;
 
-margin: 40px auto 80px auto;
+margin: 2.5em auto 5em auto;
 
 font-size: 1.13rem;
 
 }
 
 
-@media screen and (max-width: 390px) {
-  nav ul {
+footer {
+  background: #323232;
+  padding: 0.625em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+}
+
+footer ul li {
+  padding-right: 2em;
+}
+
+  
+ @media screen and (min-width: 800px){
+  #wrapper {
+    display: none;
+  }
+}
+  
+@media screen and (max-width: 800px){
+    nav {
+      display: none;
+    }
+
+   #wrapper {
+    background: #323232;
+    text-align: center;
+    }
+
+  .open {
+    background-color: #323232;
+    color: #fff;
+    font-size: 1.375em;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .burger {
+    width: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    position: absolute;
+    background-color: #323232;
+    transition: 0.3s;
+    display: flex;
     flex-direction: column;
     line-height: 2;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-
-/*
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .burger a {
+    color: #f6a21d;
+    font-size: 1.375em;
+    text-decoration: none;
+    transition: 0.3s;
   }
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  .burger .current {
+    color: #fff;
+    border: solid #fff;
+    border-radius: 0.3125em;
+    padding: 0.2em;
   }
-  .topnav.responsive a {
+
+  .close {
     float: none;
-    display: block;
-    text-align: left;
   }
-}
-*/
 
-@media screen and (max-width: 390px) {
+  .burger a:not(:first-child):hover{
+    background-color: #323232;
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+ 
+
+  /*nav ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+  }*/
+
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
   h1 {
     font-size: 1.5rem; 
   }
@@ -637,24 +710,13 @@ font-size: 1.13rem;
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 360px) and (max-width: 800px) {
   .shop-items {
     flex-direction: column;
   }
-}
-
-@media screen and (max-width: 390px) {
   .cart-price {
     font-size: 1rem;
   }
 }
 
-@media only screen and (min-width:320px) and (max-width: 768px){
-  .menu_hamburger {
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 40px;
-  }
-}
 

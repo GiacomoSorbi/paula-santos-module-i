@@ -4,130 +4,156 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Module 1 Project">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
-    <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - Publications store</title>
-    <link href="./style.css" rel="stylesheet">
-    <script src="code.js" async></script>
-</head>
+    <title>Modern Europeean Philosophy Research and Translation Institute (MEPRTI) - Publications</title>
+
+    <head profile="https://giacomoSorbi.github.io/paula-santos-module-i">
+        <link rel="icon" type="image/png" href="images/icon.png" />
+        <link href="./style.css" rel="stylesheet">
+        <script src="code.js" async></script>
+    </head>
 
 <body>
     <header>
+        <div id="wrapper">
+            <span id="open" class="open" onclick="openNav()">&#9776;</span>
+            <div class="burger" id="burger">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About us</a>
+                <a class="current" href="./publications.html">Publications</a>
+                <a href="./events.html">Events</a>
+                <a href="./contact.html">Contact us</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About us</a></li>
+                <li><a id="current" href="./publications.html">Publications</a></li>
                 <li><a href="./events.html">Events</a></li>
-                <li><a href="./publications.html">Publications store</a></li>
                 <li><a href="./contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section class="banner-sub-pages">
+            <h1>Publications</h1>
+        </section>
         <section>
-            <h1>Publications store</h1>
             <p>In this section you can buy our books.</p>
         </section>
+
+
+
+        <section class="container content-section">
+
+
+            <h2 class="section-header">Books</h2>
+
+            <div class="shop-items">
+
+                <div class="shop-item">
+
+                    <span class="shop-item-title">I. Nabil, Deconstructing the pillars of traditional philosophical
+                        ideas</span>
+                    <img class="shop-item-image" img src="images/nabil-web.jpg" alt="Front cover of Imad Nabil's book."
+                        title="Front cover of Imad Nabil's book.">
+
+                    <div class="shop-item-details">
+
+                        <span class="shop-item-price">£24.99</span>
+
+                        <button class="btn btn-primary shop-item-button" type="button">Add to basket</button>
+
+                    </div>
+
+                </div>
+
+                <div class="shop-item">
+
+                    <span class="shop-item-title">Martin Heidegger, Einführung in Die Metaphysik</span>
+
+                    <img class="shop-item-image" src="images/heidegger-web.jpg"
+                        alt="Front cover of Imad Nabil's translation of Heidegger's book."
+                        title="Front cover of Imad Nabil's translation of Heidegger's book.">
+
+                    <div class="shop-item-details">
+
+                        <span class="shop-item-price">£29.99</span><br>
+
+                        <button class="btn btn-primary shop-item-button" type="button">Add to basket</button>
+
+                    </div>
+
+                </div>
+
+                <div class="shop-item">
+
+                    <span class="shop-item-title">Jacques Derrida, Of Spirit – Heidegger and the Question</span>
+
+                    <img class="shop-item-image" src="images/derrida-web.jpg"
+                        alt="Front cover of Imad Nabil's translation of Derrida's book."
+                        title="Front cover of Imad Nabil's translation of Derrida's book.">
+
+                    <div class="shop-item-details">
+
+                        <span class="shop-item-price">£19.99</span>
+
+                        <button class="btn btn-primary shop-item-button" type="button">Add to basket</button>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <section class="container content-section">
+
+            <h2 class="section-header">Basket</h2>
+
+            <div class="cart-row">
+
+                <span class="cart-item cart-header cart-column">Item</span>
+
+                <span class="cart-price cart-header cart-column">Price</span>
+
+                <span class="cart-quantity cart-header cart-column">Quantity</span>
+
+            </div>
+
+            <div class="cart-items">
+
+            </div>
+
+            <div class="cart-total">
+
+                <strong class="cart-total-title">Total</strong>
+
+                <span class="cart-total-price">£0</span>
+
+            </div>
+
+            <button class="btn btn-primary btn-purchase" type="button">Buy</button>
+
+        </section>
     </main>
-
-
-    <section class="container content-section">
-
-
-        <h2 class="section-header">Books</h2>
-
-        <div class="shop-items">
-
-            <div class="shop-item">
-
-                <span class="shop-item-title">I. Nabil, Deconstructing the pillars of traditional philosophical
-                    ideas</span>
-                <img class="shop-item-image" img
-                    src="https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612">
-
-                <div class="shop-item-details">
-
-                    <span class="shop-item-price">£24.99</span>
-
-                    <button class="btn btn-primary shop-item-button" type="button">Add to basket</button>
-
-                </div>
-
-            </div>
-
-            <div class="shop-item">
-
-                <span class="shop-item-title">Martin Heidegger, Einführung in Die Metaphysik</span>
-
-                <img class="shop-item-image"
-                    src="https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612">
-
-                <div class="shop-item-details">
-
-                    <span class="shop-item-price">£29.99</span><br>
-
-                    <button class="btn btn-primary shop-item-button" type="button">Add to basket</button>
-
-                </div>
-
-            </div>
-
-            <div class="shop-item">
-
-                <span class="shop-item-title">Jacques Derrida, Of Spirit – Heidegger and the Question</span>
-
-                <img class="shop-item-image"
-                    src="https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612">
-
-                <div class="shop-item-details">
-
-                    <span class="shop-item-price">£19.99</span>
-
-                    <button class="btn btn-primary shop-item-button" type="button">Add to basket</button>
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-
-    </section>
-
-
-    <section class="container content-section">
-
-        <h2 class="section-header">Basket</h2>
-
-        <div class="cart-row">
-
-            <span class="cart-item cart-header cart-column">Item</span>
-
-            <span class="cart-price cart-header cart-column">Price</span>
-
-            <span class="cart-quantity cart-header cart-column">Quantity</span>
-
-        </div>
-
-        <div class="cart-items">
-
-        </div>
-
-        <div class="cart-total">
-
-            <strong class="cart-total-title">Total</strong>
-
-            <span class="cart-total-price">£0</span>
-
-        </div>
-
-        <button class="btn btn-primary btn-purchase" type="button">Buy</button>
-
-    </section>
-
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/meprti"> <img class="social" img src="images/twitter.png"
+                        alt="Twitter icon" title="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/meprti/"><img class="social" img src="images/facebook.png"
+                        alt="Facebook icon" title="Facebook"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
